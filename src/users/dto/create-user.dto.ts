@@ -23,7 +23,7 @@ export class CreateUserDto {
     nationality: string
 
     @IsDate()
-    dateOfBirth: string
+    dateOfBirth: Date
 
     @IsNotEmpty()
     educationBackground: string
