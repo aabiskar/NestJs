@@ -1,5 +1,5 @@
-import { Injectable, NotFoundException, ConflictException, HttpException, HttpStatus } from '@nestjs/common';
-import { User, ModeOfContact } from './user.model';
+import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
+import { ModeOfContact, User } from './user.model';
 import { CreateUserDto } from './dto/create-user.dto'
 import { v1 as uuidv1 } from 'uuid';
 import * as csv from 'csv-parser';
@@ -47,27 +47,29 @@ export class UsersService {
 
     checkForDuplicates(users, email) {
         const duplicate = users.find(user => user.email === email);
-        return duplicate ? true : false;
+        return !!duplicate;
     }
 
-    async postUser(createUserDto: CreateUserDto) {
-        const { email,dateOfBirth } = createUserDto;
-        const user = {
-            id: uuidv1(),
-            createdAt: new Date(),
-            dateOfBirth: new Date(dateOfBirth),
-            deleted:false,
-            ...createUserDto
-        }
+    async postUser(createUserDto: CreateUserDto): Promise<User> {
+        const { email, dateOfBirth, modeOfContact } = createUserDto;
+        const createdAt = new Date();
 
+        const user: User = {
+            id: uuidv1(),
+            createdAt,
+            dateOfBirth: new Date(dateOfBirth), //2020-09-09
+            deleted: false,
+            modeOfContact: ModeOfContact[modeOfContact],
+            ...createUserDto
+        };
         const users = await this.readCsvFile();
         const duplicate = this.checkForDuplicates(users, email);
         if (!duplicate) {
-            users.push(user)
+            users.push(user);
             await this.writeToCSVFile(users);
-            return users;
+            return user;
         }
-       throw new ConflictException(`User with Email ${email} already exists`); 
+        throw new ConflictException(`User with Email ${email} already exists`);
     }
 
     async writeToCSVFile(results: any) {

@@ -1,33 +1,38 @@
-import {IsNotEmpty,IsEmail} from 'class-validator';
+import {IsNotEmpty,IsEmail,IsDate} from 'class-validator';
+import { Type } from 'class-transformer';
+import { ModeOfContact } from '../user.model';
+
  
 export class CreateUserDto {
     @IsNotEmpty()
     name: string;
 
     @IsNotEmpty()
-    gender: string
+    gender: string;
 
     @IsNotEmpty()
-    phone: string
+    phone: string;
 
     @IsNotEmpty()
     @IsEmail()
-    email: string
+    email: string;
 
     @IsNotEmpty()
-    address: string
+    address: string;
 
     @IsNotEmpty()
-    nationality: string
+    nationality: string;
 
     @IsNotEmpty()
-    dateOfBirth: string
+    @Type(() => Date)
+    @IsDate()
+    dateOfBirth: Date;
 
     @IsNotEmpty()
-    educationBackground: string
+    educationBackground: string;
 
     @IsNotEmpty()
-    modeOfContact: string
+    modeOfContact: ModeOfContact;
 
     @IsNotEmpty()
     description: string;

@@ -6,10 +6,12 @@ export interface User {
     email: string,
     address: string,
     nationality: string,
-    dateOfBirth: string,
+    dateOfBirth: Date,
     educationBackground: string,
     modeOfContact: ModeOfContact,
-    description: string
+    description: string,
+    deleted: boolean,
+    createdAt: Date
 }
 
 export enum ModeOfContact {
