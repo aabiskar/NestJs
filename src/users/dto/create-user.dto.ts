@@ -1,6 +1,4 @@
 import {IsNotEmpty,IsEmail,IsDate,Contains} from 'class-validator';
-
-//(select one from email, phone, none) 
  
 export class CreateUserDto {
     @IsNotEmpty()
@@ -22,8 +20,8 @@ export class CreateUserDto {
     @IsNotEmpty()
     nationality: string
 
-    @IsDate()
-    dateOfBirth: Date
+    @IsNotEmpty()
+    dateOfBirth: string
 
     @IsNotEmpty()
     educationBackground: string
