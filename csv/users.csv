@@ -1,0 +1,3 @@
+id,name,gender,phone,email,address,nationality,dateOfBirth,educationBackground,modeOfContact,description,createdAt,deleted
+aaab7b90-aeda-11ea-a34b-250dbbf153c6,Rajesh,male,9841743470,rajesh@gmail.com,Nepal,Nepali,2020-01-01,SLC,none,description,Mon Jun 15 2020 13:19:37 GMT+0545 (Nepal Time),false
+b64b6780-aeda-11ea-a34b-250dbbf153c6,Suresh,male,9841743470,suresh@gmail.com,Nepal,Nepali,2020-01-01,SLC,none,description,Mon Jun 15 2020 13:19:57 GMT+0545 (Nepal Time),false

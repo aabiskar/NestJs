@@ -10,7 +10,7 @@ let results = [];
 
 @Injectable()
 export class UsersService {
-    private filePath = path.join(__dirname, '../../../csv/users.csv');//It goes three folders or directories back from given __dirname.
+    private filePath = path.join(__dirname, '../../csv/users.csv');
 
     async getAllUsers(): Promise<User[]> {
         const users = await this.readCsvFile();
@@ -51,7 +51,7 @@ export class UsersService {
     }
 
     async postUser(createUserDto: CreateUserDto) {
-        const { email,dateOfBirth,description } = createUserDto;
+        const { email,dateOfBirth } = createUserDto;
         const user = {
             id: uuidv1(),
             createdAt: new Date(),
@@ -86,7 +86,6 @@ export class UsersService {
     }
 
     extractAsCSV(results) {
-        console.log("Extract as CSV", results)
         const header = ['id,name,gender,phone,email,address,nationality,dateOfBirth,educationBackground,modeOfContact,description,createdAt,deleted'];
         const rows = results.map(
             user => `${user.id},${user.name},${user.gender},${user.phone},${user.email},${user.address},${user.nationality},${user.dateOfBirth},${user.educationBackground},${user.modeOfContact},${user.description},${user.createdAt},${user.deleted}`
