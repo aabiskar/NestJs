@@ -20,5 +20,6 @@ $ cd server_app
 $ yarn start:dev
 
 # For running the client application
+$ cd client_app
 $ yarn start
 ```
