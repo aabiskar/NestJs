@@ -1,3 +1,3 @@
 id,name,gender,phone,email,address,nationality,dateOfBirth,educationBackground,modeOfContact,description,createdAt,deleted
-4b7fabf0-b097-11ea-a7b0-5bdaa961852c,MANOJ KHATRI,Male,9841743470,mansadds@gmail.com,SWOYAMBHU,sdasdd,2020-06-11,sdfsdfs,email,dasdasdasda,Wed Jun 17 2020 18:22:24 GMT+0545 (Nepal Time),false
-361caa60-b097-11ea-a7b0-5bdaa961852c,MANOJ KHATRI,Male,9841743470,manojkhatri2069@gmail.com,SWOYAMBHU,asdaad,2020-06-26,sdfsdfs,email,sdfsfsfdfsf,Wed Jun 17 2020 18:21:48 GMT+0545 (Nepal Time),false
+c82f08c0-b0bb-11ea-95f2-5ffc8c49c3a3,Paul Huff,Male,7075715045,paul@yopmail.com,1100 Liberty Ave,British,2020-06-16,BS,phone,At vero eos et accusamus et iusto odio dignissimos ,Wed Jun 17 2020 22:43:35 GMT+0545 (Nepal Time),false
+d5311230-b0ba-11ea-95f2-5ffc8c49c3a3,John Lee,Male,2025550116,john@gmail.com, Coal Road ,American,1980-02-02,MS,email,Lorem ipsum dolor sit amet consectetur adipiscing.,Wed Jun 17 2020 22:36:47 GMT+0545 (Nepal Time),false
