@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277d2bbf-e7c8-4339-9d15-0d1d43e004d1" name="Default Changelist" comment="Added users csv file">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/dto/create-user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/dto/create-user.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/user.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +44,11 @@
       <updated>1592205184878</updated>
       <workItem from="1592205186946" duration="9580000" />
       <workItem from="1592218100728" duration="720000" />
-      <workItem from="1592218950563" duration="31000" />
+      <workItem from="1592218950563" duration="1604000" />
+      <workItem from="1592230818718" duration="946000" />
+      <workItem from="1592239375004" duration="1017000" />
+      <workItem from="1592327081487" duration="1879000" />
+      <workItem from="1592396508324" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="Added users csv file">
       <created>1592206588763</created>
@@ -57,7 +57,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592206588764</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TypeCast issue fix for Enum value for ModeOfContact">
+      <created>1592219078443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592219078443</updated>
+    </task>
+    <task id="LOCAL-00003" summary="enable cors">
+      <created>1592396951755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592396951755</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -65,17 +79,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added users csv file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added users csv file" />
+    <MESSAGE value="TypeCast issue fix for Enum value for ModeOfContact" />
+    <MESSAGE value="enable cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable cors" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1592206588652">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1592396951619">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1592206588652" />
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1592396951619" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1592219019449">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1592219019449" />
+    <state x="505" y="175" width="424" height="484" key="FileChooserDialogImpl" timestamp="1592378609968">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="505" y="175" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1592378609968" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1592218981142">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
