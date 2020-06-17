@@ -28,6 +28,12 @@
   color: #61dafb;
 }
 
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

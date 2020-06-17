@@ -6,6 +6,7 @@ import {
     Link
 } from "react-router-dom";
 import UserLists from  "./components/userList";
+import AddUser from  "./components/addUser";
 
 export default function App() {
     return (
@@ -24,6 +25,9 @@ export default function App() {
                 <Switch>
                     <Route exact path="/">
                         <UserLists />
+                    </Route>
+                    <Route exact path="/add-user">
+                        <AddUser />
                     </Route>
                 </Switch>
             </div>
